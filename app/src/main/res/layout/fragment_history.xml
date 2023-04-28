@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.history.HistoryFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:letterSpacing=".2"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#fff"
+        android:textAllCaps="true"
+        android:text="History"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#000"
+        android:layout_marginTop="45dp"
+        android:layout_height="2dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/usersRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="45dp"
+        android:padding="5dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_user" />
+
+</FrameLayout>
